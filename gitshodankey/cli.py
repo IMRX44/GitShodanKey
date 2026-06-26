@@ -149,7 +149,8 @@ async def _scan_async(cfg, service_list, output, fmt, notifiers, resume, no_vali
         for searcher in searchers:
             try:
                 raw_results = await searcher.search(pattern, lang)
-            except Exception:
+            except Exception as e:
+                console.print(f"[dim red]Search error ({searcher.__class__.__name__}, {pattern}): {e}[/dim red]")
                 continue
             for content, url, repo, file_path in raw_results:
                 new_findings = extractor.extract(content, url, repo, file_path)

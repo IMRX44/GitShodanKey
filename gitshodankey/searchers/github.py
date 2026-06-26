@@ -28,13 +28,14 @@ class GitHubSearcher(BaseSearcher):
         session = await self._get_session()
         query = keyword
         if language:
-            query = f"{keyword}+language:{language}"
+            query = f"{keyword} language:{language}"
 
         for page in range(1, 11):
             await self.rate_limiter.acquire()
             url = f"{self.BASE_URL}/search/code"
             params = {"q": query, "per_page": 100, "page": page}
 
+            data = None
             attempt = 0
             while attempt < 5:
                 try:
@@ -56,6 +57,8 @@ class GitHubSearcher(BaseSearcher):
                     continue
                 break
 
+            if data is None:
+                break
             items = data.get("items", [])
             if not items:
                 break

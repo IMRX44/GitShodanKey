@@ -1,0 +1,10 @@
+service: sendgrid
+patterns:
+  - "SENDGRID_API_KEY="
+  - "sendgrid_api_key="
+  - "SG."
+  - "sendgrid_key="
+  - "SENDGRID_KEY="
+language: null
+key_regex: "SG\\.[A-Za-z0-9\\._\\-]{20,}"
+description: "SendGrid API Key"

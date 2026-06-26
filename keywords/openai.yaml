@@ -1,0 +1,10 @@
+service: openai
+patterns:
+  - "openai_api_key="
+  - "OPENAI_API_KEY="
+  - "openai.api_key="
+  - "OPENAI_KEY="
+  - "openai_key="
+language: null
+key_regex: "sk-[A-Za-z0-9]{48}"
+description: "OpenAI API Key"

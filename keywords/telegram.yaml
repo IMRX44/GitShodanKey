@@ -1,0 +1,10 @@
+service: telegram
+patterns:
+  - "TELEGRAM_BOT_TOKEN="
+  - "bot_token="
+  - "telegram_token="
+  - "TELEGRAM_TOKEN="
+  - "bot_api_token="
+language: null
+key_regex: "[0-9]{8,10}:AA[A-Za-z0-9\\-_]{33}"
+description: "Telegram Bot Token"

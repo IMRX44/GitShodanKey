@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: gitshodankey
+Version: 2.0.0
+Summary: Fast async tool to find leaked API keys in public GitHub/GitLab repos
+Requires-Python: >=3.9
+Requires-Dist: click>=8.0
+Requires-Dist: rich>=13.0
+Requires-Dist: aiohttp>=3.9
+Requires-Dist: PyGithub>=2.0
+Requires-Dist: shodan>=1.28
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: jinja2>=3.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-dotenv>=1.0

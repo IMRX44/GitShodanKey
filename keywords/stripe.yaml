@@ -1,0 +1,10 @@
+service: stripe
+patterns:
+  - "stripe_secret_key="
+  - "STRIPE_API_KEY="
+  - "STRIPE_SECRET_KEY="
+  - "stripe_api_key="
+  - "sk_live_"
+language: null
+key_regex: "sk_live_[A-Za-z0-9]{24,}"
+description: "Stripe Secret Key"

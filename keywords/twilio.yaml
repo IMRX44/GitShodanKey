@@ -1,0 +1,10 @@
+service: twilio
+patterns:
+  - "TWILIO_AUTH_TOKEN="
+  - "twilio_api_key="
+  - "TWILIO_API_KEY="
+  - "twilio_auth_token="
+  - "twilio_account_sid="
+language: null
+key_regex: "SK[a-f0-9]{32}"
+description: "Twilio API Key"

@@ -1,0 +1,10 @@
+service: virustotal
+patterns:
+  - "virustotal_api_key="
+  - "vt_api_key="
+  - "VIRUSTOTAL_API_KEY="
+  - "VT_API_KEY="
+  - "virustotal_key="
+language: null
+key_regex: "[a-fA-F0-9]{64}"
+description: "VirusTotal API key"

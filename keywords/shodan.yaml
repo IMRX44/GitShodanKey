@@ -1,0 +1,12 @@
+service: shodan
+patterns:
+  - "shodan_api_key="
+  - "sd=shodan("
+  - "shodan_key="
+  - "shodankey="
+  - "api=shodan("
+  - "s=shodan.shodan("
+  - "shodan_api="
+language: python
+key_regex: "[a-zA-Z0-9]{32}"
+description: "Shodan API key"

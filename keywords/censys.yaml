@@ -1,0 +1,10 @@
+service: censys
+patterns:
+  - "censys_api_key="
+  - "CENSYS_API_SECRET="
+  - "CENSYS_API_ID="
+  - "censys_api_id="
+  - "censys_secret="
+language: null
+key_regex: "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+description: "Censys API key (UUID format)"

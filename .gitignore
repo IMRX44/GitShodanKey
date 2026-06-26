@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+*.json
+!config.example.yaml
+dist/
+build/
+.gitshodankey_resume.json
+results.*

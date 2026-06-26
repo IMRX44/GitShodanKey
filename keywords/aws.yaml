@@ -1,0 +1,10 @@
+service: aws
+patterns:
+  - "AKIA"
+  - "aws_access_key_id"
+  - "AWS_ACCESS_KEY"
+  - "aws_access_key="
+  - "AWSAccessKeyId="
+language: null
+key_regex: "AKIA[A-Z0-9]{16}"
+description: "AWS Access Key"

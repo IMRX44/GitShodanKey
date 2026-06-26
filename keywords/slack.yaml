@@ -1,0 +1,11 @@
+service: slack
+patterns:
+  - "SLACK_TOKEN="
+  - "slack_api_token="
+  - "SLACK_API_TOKEN="
+  - "slack_token="
+  - "xoxb-"
+  - "xoxp-"
+language: null
+key_regex: "xox[baprs]-[A-Za-z0-9\\-]{10,}"
+description: "Slack API Token"

@@ -1,3 +1,5 @@
+# DEPRECATED: This is the original synchronous single-service script.
+# Use the new async CLI instead: pip install -e . && gitshodankey --help
 import sys
 import time
 import datetime

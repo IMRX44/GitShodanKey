@@ -1,0 +1,10 @@
+service: github_token
+patterns:
+  - "GITHUB_TOKEN="
+  - "github_api_key="
+  - "github_token="
+  - "GH_TOKEN="
+  - "GITHUB_API_TOKEN="
+language: null
+key_regex: "ghp_[A-Za-z0-9]{36}"
+description: "GitHub Personal Access Token"

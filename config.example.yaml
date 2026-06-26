@@ -1,0 +1,13 @@
+github_token: "your_github_token_here"
+gitlab_token: "your_gitlab_token_here"
+services:
+  - shodan
+  - virustotal
+  - aws
+concurrency: 10
+output_file: results
+output_format: html
+telegram_token: ""
+telegram_chat_id: ""
+discord_webhook_url: ""
+resume_file: .gitshodankey_resume.json
